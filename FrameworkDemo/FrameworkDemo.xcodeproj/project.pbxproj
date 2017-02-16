@@ -6,18 +6,53 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F46C2781E558E7F00B9AC60 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F46C2791E558E8000B9AC60 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				1F46C27C1E558EC000B9AC60 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F46C2721E558C1700B9AC60 /* FrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F46C2701E558C1700B9AC60 /* FrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F46C27F1E5590ED00B9AC60 /* VCMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F46C27D1E5590ED00B9AC60 /* VCMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F46C2801E5590ED00B9AC60 /* VCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C27E1E5590ED00B9AC60 /* VCMessage.m */; };
+		1F46C2BF1E55A1B200B9AC60 /* VCMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F46C28D1E5596A000B9AC60 /* VCMain.storyboard */; };
+		1F46C2C01E55A1B600B9AC60 /* iPhone_size.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F46C28B1E55953200B9AC60 /* iPhone_size.png */; };
+		1F46C2CC1E55A42200B9AC60 /* VCViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F46C2C91E55A42200B9AC60 /* VCViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F46C2CD1E55A42200B9AC60 /* VCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F46C2CA1E55A42200B9AC60 /* VCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F46C26D1E558C1700B9AC60 /* FrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F46C2701E558C1700B9AC60 /* FrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkDemo.h; sourceTree = "<group>"; };
 		1F46C2711E558C1700B9AC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F46C27D1E5590ED00B9AC60 /* VCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMessage.h; sourceTree = "<group>"; };
+		1F46C27E1E5590ED00B9AC60 /* VCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMessage.m; sourceTree = "<group>"; };
+		1F46C2851E5593CC00B9AC60 /* Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F46C2871E5593CD00B9AC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F46C28B1E55953200B9AC60 /* iPhone_size.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_size.png; sourceTree = "<group>"; };
+		1F46C28D1E5596A000B9AC60 /* VCMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VCMain.storyboard; sourceTree = "<group>"; };
+		1F46C2C91E55A42200B9AC60 /* VCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCViewController.h; sourceTree = "<group>"; };
+		1F46C2CA1E55A42200B9AC60 /* VCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1F46C2691E558C1700B9AC60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F46C2821E5593CC00B9AC60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				1F46C26F1E558C1700B9AC60 /* FrameworkDemo */,
+				1F46C2861E5593CD00B9AC60 /* Bundle */,
 				1F46C26E1E558C1700B9AC60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				1F46C26D1E558C1700B9AC60 /* FrameworkDemo.framework */,
+				1F46C2851E5593CC00B9AC60 /* Bundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -47,9 +84,23 @@
 			isa = PBXGroup;
 			children = (
 				1F46C2701E558C1700B9AC60 /* FrameworkDemo.h */,
+				1F46C27D1E5590ED00B9AC60 /* VCMessage.h */,
+				1F46C27E1E5590ED00B9AC60 /* VCMessage.m */,
+				1F46C2C91E55A42200B9AC60 /* VCViewController.h */,
+				1F46C2CA1E55A42200B9AC60 /* VCViewController.m */,
 				1F46C2711E558C1700B9AC60 /* Info.plist */,
 			);
 			path = FrameworkDemo;
+			sourceTree = "<group>";
+		};
+		1F46C2861E5593CD00B9AC60 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				1F46C28B1E55953200B9AC60 /* iPhone_size.png */,
+				1F46C2871E5593CD00B9AC60 /* Info.plist */,
+				1F46C28D1E5596A000B9AC60 /* VCMain.storyboard */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +111,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F46C2721E558C1700B9AC60 /* FrameworkDemo.h in Headers */,
+				1F46C2CC1E55A42200B9AC60 /* VCViewController.h in Headers */,
+				1F46C27F1E5590ED00B9AC60 /* VCMessage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,16 +137,42 @@
 			productReference = 1F46C26D1E558C1700B9AC60 /* FrameworkDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1F46C2841E5593CC00B9AC60 /* Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F46C2881E5593CD00B9AC60 /* Build configuration list for PBXNativeTarget "Bundle" */;
+			buildPhases = (
+				1F46C2811E5593CC00B9AC60 /* Sources */,
+				1F46C2821E5593CC00B9AC60 /* Frameworks */,
+				1F46C2831E5593CC00B9AC60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bundle;
+			productName = Bundle;
+			productReference = 1F46C2851E5593CC00B9AC60 /* Bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1F46C2641E558C1700B9AC60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VC;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Victor Chee";
 				TargetAttributes = {
 					1F46C26C1E558C1700B9AC60 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					1F46C2781E558E7F00B9AC60 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					1F46C2841E5593CC00B9AC60 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -112,6 +191,8 @@
 			projectRoot = "";
 			targets = (
 				1F46C26C1E558C1700B9AC60 /* FrameworkDemo */,
+				1F46C2781E558E7F00B9AC60 /* Aggregate */,
+				1F46C2841E5593CC00B9AC60 /* Bundle */,
 			);
 		};
 /* End PBXProject section */
@@ -124,10 +205,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F46C2831E5593CC00B9AC60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F46C2BF1E55A1B200B9AC60 /* VCMain.storyboard in Resources */,
+				1F46C2C01E55A1B600B9AC60 /* iPhone_size.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F46C27C1E558EC000B9AC60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\nBUNDLE_NAME=\"Bundle\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos -arch armv7 -arch armv7s -arch arm64 clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator -arch x86_64 clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n# Copy the resources bundle\nditto \"{WRK_DIR}/Release-iphoneos/${BUNDLE_NAME}.bundle\" \\\n\"${SRCROOT}/Products/${FMK_NAME}.bundle\"\nrm -r \"${WRK_DIR}\"\nopen \"${SRCROOT}/Products/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F46C2681E558C1700B9AC60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F46C2801E5590ED00B9AC60 /* VCMessage.m in Sources */,
+				1F46C2CD1E55A42200B9AC60 /* VCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F46C2811E5593CC00B9AC60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -223,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -245,6 +360,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.FrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -263,9 +379,59 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.FrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1F46C27A1E558E8000B9AC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F46C27B1E558E8000B9AC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F46C2891E5593CD00B9AC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1F46C28A1E5593CD00B9AC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -286,6 +452,22 @@
 			buildConfigurations = (
 				1F46C2761E558C1700B9AC60 /* Debug */,
 				1F46C2771E558C1700B9AC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F46C2791E558E8000B9AC60 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F46C27A1E558E8000B9AC60 /* Debug */,
+				1F46C27B1E558E8000B9AC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F46C2881E5593CD00B9AC60 /* Build configuration list for PBXNativeTarget "Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F46C2891E5593CD00B9AC60 /* Debug */,
+				1F46C28A1E5593CD00B9AC60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
