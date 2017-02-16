@@ -32,6 +32,9 @@
                             <constraint firstItem="NAL-0e-Xf2" firstAttribute="centerY" secondItem="5U5-in-AUJ" secondAttribute="centerY" id="9ad-wC-bFD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="indicator" destination="NAL-0e-Xf2" id="Ap0-Aw-PVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Qc-67-Ag7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
